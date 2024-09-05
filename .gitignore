@@ -182,3 +182,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Test results exclusions
+test-results/
