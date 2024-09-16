@@ -185,3 +185,6 @@ $RECYCLE.BIN/
 
 # Test results exclusions
 test-results/
+
+# Cookies
+playwright/.auth

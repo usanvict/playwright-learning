@@ -11,21 +11,23 @@ const config: PlaywrightTestConfig = {
         actionTimeout: 15000,
         ignoreHTTPSErrors: true,
         video: "off",
-        screenshot: "off"
+        screenshot: "off",
+        baseURL: "https://www.kofio.cz/"
     },
     projects: [
+        // Setup project
         {
-            name: "Chromium",
-            use: { browserName: "chromium" }
+            name: 'setup',
+            testMatch: /.*\.setup\.ts/
         },
         {
-            name: "Firefox",
-            use: { browserName: "firefox" }
+            name: 'e2e tests',
+            testMatch: '**/*loggedin.spec.ts',
+            use: {
+                storageState: 'playwright/.auth/user.json',
+            },
+            dependencies: ['setup'],
         },
-        {
-            name: "Webkit",
-            use: { browserName: "webkit" }
-        }
     ],
     globalSetup: require.resolve('./global-setup')
 }
