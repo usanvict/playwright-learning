@@ -22,5 +22,12 @@ test.describe("Adding item to cart", async () => {
 		await page.click("button.btnSimpleAddToCart");
 
 		await expect(page.locator(".push_header_cart")).toBeVisible();
+		await expect(page.locator(".product_buy_amount")).toHaveValue("1");
+
+		await page.locator("div.black_overlay_x").click();
+
+		await expect(
+			page.locator('#showRightPush > div.cart_total'),
+		).toHaveText("1");
 	});
 });
