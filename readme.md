@@ -1,3 +1,1 @@
-To run tests in chrome, run:
-
-npm run tests:chrome
+To run some tests, run `npm run tests`
