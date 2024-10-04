@@ -2,7 +2,7 @@ import { test as setup, expect } from '@playwright/test';
 import path from 'path';
 
 const authFile = path.join(__dirname, '../playwright/.auth/user.json');
-setup('authenticate', async ({ page }) => {
+setup('Logging in to the webpage', async ({ page }) => {
     // Perform authentication steps
     await page.goto('/');
     await page.click(".auth_register")

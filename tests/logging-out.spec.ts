@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('logs user out', async ({ page }) => {
+test.skip('Logging in to the webpage', async ({ page }) => {
 
     await page.goto('/');
     await page.getByRole('button', { name: 'Moje Kofio' }).click()

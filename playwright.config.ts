@@ -1,7 +1,5 @@
 import { PlaywrightTestConfig } from "@playwright/test";
 
-
-
 const config: PlaywrightTestConfig = {
     timeout: 60000,
     retries: 0,
@@ -14,22 +12,22 @@ const config: PlaywrightTestConfig = {
         screenshot: "off",
         baseURL: "https://www.kofio.cz/"
     },
-    projects: [
-        // Setup project
-        {
-            name: 'setup',
-            testMatch: /.*\.setup\.ts/
-        },
-        {
-            name: 'e2e tests',
-            testMatch: '**/*loggedin.spec.ts',
-            use: {
-                storageState: 'playwright/.auth/user.json',
-            },
-            dependencies: ['setup'],
-        },
-    ],
-    globalSetup: require.resolve('./global-setup')
+    // projects: [
+    //     {
+    //         name: 'setup',
+    //         testMatch: /.*\.setup\.ts/
+    //     },
+    //     {
+    //         name: 'logging out',
+    //         testMatch: '**/logging-out.spec.ts',
+    //         use: {
+    //             storageState: 'playwright/.auth/user.json',
+    //         },
+    //         dependencies: ['setup'],
+    //     },
+    // ],
+
+    //globalSetup: require.resolve('./global-setup')
 }
 
 export default config

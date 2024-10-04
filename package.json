@@ -4,7 +4,7 @@
   "description": "Learning automated software testing with Playwright",
   "main": "index.js",
   "scripts": {
-    "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium"
+    "tests": "playwright test"
   },
   "author": "Victoria Usan",
   "license": "ISC",
