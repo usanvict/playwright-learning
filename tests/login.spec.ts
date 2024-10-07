@@ -9,7 +9,7 @@ test.describe("Login using page object pattern", () => {
 		loginPage.visit();
 	});
 
-	test("Negative login", async ({ page }) => {
+	test("Negative login", async () => {
 		await loginPage.login("invalid", "invalid");
 		await loginPage.assertErrorMessage();
 	});

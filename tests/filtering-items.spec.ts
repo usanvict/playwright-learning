@@ -10,14 +10,14 @@ test.describe
 			kavaPage.visit();
 		});
 
-		test("Choose all the branches", async ({ page }) => {
+		test("Choose all the branches", async () => {
 			await kavaPage.chooseLocation("0");
 			await kavaPage.assertLocationFilterTurnedOn("Kdekoliv");
 			await kavaPage.removeAnyFilter();
 			await kavaPage.assertLocationFilterTurnedOff("-1");
 		});
 
-		test("Filter discounts", async ({ page }) => {
+		test("Filter discounts", async () => {
 			await kavaPage.chooseSpecialOfferItem("Slevy");
 			await kavaPage.assertCategoryChosen("Slevy na kávu");
 			await kavaPage.removeAnyFilter();
