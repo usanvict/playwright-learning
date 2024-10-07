@@ -6,7 +6,7 @@ test.describe("Filtering the items", async () => {
 
 	test.beforeEach(async ({ page }) => {
 		kavaPage = new KavaPage(page);
-		kavaPage.visit();
+		await kavaPage.visit();
 	});
 
 	test("Choose all the branches", async () => {
