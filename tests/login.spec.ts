@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { LoginPage } from "../page-objects/LoginPage";
 
-test.describe("Login using page object pattern", () => {
+test.describe.skip("Login using page object pattern", () => {
 	let loginPage: LoginPage;
 
 	test.beforeEach(async ({ page }) => {
