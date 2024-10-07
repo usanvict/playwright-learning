@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("Adding item to cart", async () => {
-	test.only("Add coffee to a cart", async ({ page }) => {
+	test("Add coffee to a cart", async ({ page }) => {
 		await page.goto("/");
 
 		await page.locator("#navbar").getByRole("link", { name: "Káva" }).hover();
@@ -26,8 +26,8 @@ test.describe("Adding item to cart", async () => {
 
 		await page.locator("div.black_overlay_x").click();
 
-		await expect(
-			page.locator('#showRightPush > div.cart_total'),
-		).toHaveText("1");
+		await expect(page.locator("#showRightPush > div.cart_total")).toHaveText(
+			"1",
+		);
 	});
 });
