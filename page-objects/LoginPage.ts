@@ -20,7 +20,7 @@ export class LoginPage {
 	}
 
 	async visit() {
-		await this.page.goto("https://www.kofio.cz/auth/login");
+		await this.page.goto("/auth/login");
 	}
 
 	async login(username: string, password: string) {
