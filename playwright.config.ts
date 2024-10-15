@@ -1,10 +1,10 @@
-import { PlaywrightTestConfig } from "@playwright/test";
+import type { PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
 	timeout: 60000,
 	retries: 0,
 	use: {
-		headless: false,
+		// headless: false,
 		viewport: { width: 1200, height: 720 },
 		actionTimeout: 15000,
 		ignoreHTTPSErrors: true,

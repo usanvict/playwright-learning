@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test } from "@playwright/test";
 import { KavaPage } from "../page-objects/KavaPage";
 
 test.describe("Filtering the items", async () => {
@@ -12,6 +12,7 @@ test.describe("Filtering the items", async () => {
 	test("Choose all the branches", async () => {
 		await kavaPage.chooseLocation("0");
 		await kavaPage.assertLocationFilterTurnedOn("Kdekoliv");
+		// await kavaPage.wait(3000);
 		await kavaPage.removeAnyFilter();
 		await kavaPage.assertLocationFilterTurnedOff("-1");
 	});

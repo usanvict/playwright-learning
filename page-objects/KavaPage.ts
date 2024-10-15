@@ -1,12 +1,7 @@
-import { expect, type Locator, type Page } from "@playwright/test";
+import { expect } from "@playwright/test";
+import { AbstractPage } from "./AbstractPage";
 
-export class KavaPage {
-	readonly page: Page;
-
-	constructor(page: Page) {
-		this.page = page;
-	}
-
+export class KavaPage extends AbstractPage {
 	async visit() {
 		await this.page.goto("/kava");
 	}

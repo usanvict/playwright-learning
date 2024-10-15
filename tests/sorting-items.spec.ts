@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test } from "@playwright/test";
 import { CategoryHeader } from "../page-objects/components/sorting";
 import { KavaPage } from "../page-objects/KavaPage";
 
