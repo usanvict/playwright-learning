@@ -24,7 +24,7 @@ test.describe("Sorting items", async () => {
 		await categoryHeader.sort("Nejlépe hodnocené");
 	});
 
-	test.only("Sorting cheapest as a whole", async () => {
+	test("Sorting cheapest as a whole", async () => {
 		await categoryHeader.sort("Nejlevnější");
 		await categoryHeader.sort("Od nejnižší celkové ceny");
 	});
