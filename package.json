@@ -4,7 +4,9 @@
   "description": "Learning automated software testing with Playwright",
   "main": "index.js",
   "scripts": {
-    "tests": "playwright test"
+    "tests": "playwright test",
+    "visual-tests": "playwright test --config=visual.config.ts",
+    "visual-tests-update": "playwright test --config=visual.config.ts --update-snapshots"
   },
   "author": "Victoria Usan",
   "license": "ISC",

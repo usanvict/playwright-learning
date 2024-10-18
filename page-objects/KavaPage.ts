@@ -37,4 +37,22 @@ export class KavaPage extends AbstractPage {
 	async assertCategoryChosen(category: string) {
 		await expect(this.page.locator("#filterTab")).toHaveText(category);
 	}
+
+	async snapshotLocationFilterEmpty() {
+		expect(
+			await this.page
+				.locator('button[data-id="availability_location"]')
+				.screenshot(),
+		).toMatchSnapshot("location-filter-empty.png");
+	}
+
+	async snapshotLocationFilter() {
+		expect(
+			await this.page
+				.locator(
+					"div.category_filter_selected_opts > label.checked > div > span",
+				)
+				.screenshot(),
+		).toMatchSnapshot("location-filter-anywhere.png");
+	}
 }
