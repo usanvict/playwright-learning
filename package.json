@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tests": "playwright test",
-    "visual-tests": "playwright test --config=visual.config.ts",
-    "visual-tests-update": "playwright test --config=visual.config.ts --update-snapshots"
+    "tests:visual": "playwright test --config=visual.config.ts",
+    "tests:visual:update": "playwright test --config=visual.config.ts --update-snapshots"
   },
   "author": "Victoria Usan",
   "license": "ISC",
