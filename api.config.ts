@@ -4,6 +4,7 @@ const config: PlaywrightTestConfig = {
 	timeout: 60000,
 	retries: 0,
 	testDir: "tests/api",
+	workers: 1,
 	use: {
 		viewport: { width: 1200, height: 720 },
 		actionTimeout: 15000,
