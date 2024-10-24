@@ -6,7 +6,8 @@
   "scripts": {
     "tests": "playwright test",
     "tests:visual": "playwright test --config=visual.config.ts",
-    "tests:visual:update": "playwright test --config=visual.config.ts --update-snapshots"
+    "tests:visual:update": "playwright test --config=visual.config.ts --update-snapshots",
+    "tests:api": "playwright test --config=api.config.ts"
   },
   "author": "Victoria Usan",
   "license": "ISC",
