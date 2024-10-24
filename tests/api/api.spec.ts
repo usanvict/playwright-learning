@@ -15,7 +15,7 @@ test.describe
 		});
 
 		test("GET Request - Get Dog Detail", async ({ request }) => {
-			const response = await request.get(`${baseURL}/pet/2`);
+			const response = await request.get(`${baseURL}/pet/101`);
 			const responseBody = JSON.parse(await response.text());
 			expect(response.status()).toBe(200);
 			expect(responseBody.id).toBe(2);
@@ -55,5 +55,25 @@ test.describe
 				},
 			});
 			expect(response.status()).toBe(400);
+		});
+
+		test("PUT Request - Update dog", async ({ request }) => {
+			const response = await request.put(`${baseURL}/pet`, {
+				data: {
+					name: "Alexis",
+					category: {
+						id: 5,
+					},
+				},
+			});
+			expect(response.status()).toBe(200);
+
+			const responseBody = JSON.parse(await response.text());
+			expect(responseBody.name).toBe("Alexis");
+		});
+
+		test("DELETE Request - Delete Dog", async ({ request }) => {
+			const response = await request.delete(`${baseURL}/pet/2`);
+			expect(response.status()).toBe(204);
 		});
 	});
