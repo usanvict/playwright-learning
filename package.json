@@ -7,7 +7,8 @@
     "tests": "playwright test",
     "tests:visual": "playwright test --config=visual.config.ts",
     "tests:visual:update": "playwright test --config=visual.config.ts --update-snapshots",
-    "tests:api": "playwright test --config=api.config.ts"
+    "tests:api": "playwright test --config=api.config.ts",
+    "tests:api:jenkins": "playwright test --config=api.config.ts --reporter=list"
   },
   "author": "Victoria Usan",
   "license": "ISC",
