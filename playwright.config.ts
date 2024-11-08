@@ -3,6 +3,7 @@ import type { PlaywrightTestConfig } from "@playwright/test";
 const config: PlaywrightTestConfig = {
 	timeout: 60000,
 	retries: 0,
+	testDir: "tests/tips",
 	use: {
 		// headless: false,
 		viewport: { width: 1200, height: 720 },
