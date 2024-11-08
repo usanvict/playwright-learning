@@ -8,7 +8,8 @@
     "tests:visual": "playwright test --config=visual.config.ts",
     "tests:visual:update": "playwright test --config=visual.config.ts --update-snapshots",
     "tests:api": "playwright test --config=api.config.ts",
-    "tests:api:jenkins": "playwright test --config=api.config.ts --reporter=list"
+    "tests:api:jenkins": "playwright test --config=api.config.ts --reporter=list",
+    "jenkins-server": "java -jar .\\jenkins.war --httpPort=8080 --enable-future-java"
   },
   "author": "Victoria Usan",
   "license": "ISC",
