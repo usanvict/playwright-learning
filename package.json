@@ -14,9 +14,12 @@
   "author": "Victoria Usan",
   "license": "ISC",
   "dependencies": {
+    "@cucumber/cucumber": "^11.0.1",
     "@playwright/test": "^1.46.1",
+    "chai": "^5.1.2",
+    "cucumber-html-reporter": "^6.0.0",
     "dotenv": "^16.4.5",
-    "prettier": "^3.3.3"
+    "playwright": "^1.48.2"
   },
   "devDependencies": {
     "@types/node": "^22.5.4"
