@@ -1,0 +1,53 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-action;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 297482900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on a login page",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4923285599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 186073400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-action",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login action",
+    "tags": [],
+    "uri": "bdd-playwright\\features\\login.feature"
+  }
+]

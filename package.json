@@ -9,7 +9,8 @@
     "tests:visual:update": "playwright test --config=visual.config.ts --update-snapshots",
     "tests:api": "playwright test --config=api.config.ts",
     "tests:api:jenkins": "playwright test --config=api.config.ts --reporter=list",
-    "jenkins-server": "java -jar .\\jenkins.war --httpPort=8080 --enable-future-java"
+    "jenkins-server": "java -jar .\\jenkins.war --httpPort=8080 --enable-future-java",
+    "bdd": ".\\node_modules\\.bin\\cucumber-js --config .\\bdd-playwright\\cucumber.js --require .\\bdd-playwright\\step-definitions\\**\\*.js -f json:.\\bdd-playwright\\cucumber_report.json"
   },
   "author": "Victoria Usan",
   "license": "ISC",
