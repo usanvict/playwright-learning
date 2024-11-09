@@ -9,7 +9,7 @@ test.describe
 			console.log(testInfo.expectedStatus);
 		});
 
-		test.only("Random", async ({ page }, testInfo) => {
+		test("Random", async ({ page }, testInfo) => {
 			const newNumber = await getRandomNumber();
 			console.log(newNumber);
 			const newString = await getRandomString();
