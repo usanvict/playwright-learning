@@ -8,7 +8,7 @@ import type {
 } from "@playwright/test/reporter";
 import * as fs from "node:fs";
 
-class myReporter implements Reporter {
+class MyReporter implements Reporter {
 	onBegin(config: FullConfig, suite: Suite) {
 		console.log(`Execution of ${suite.allTests().length} tests`);
 	}
@@ -32,9 +32,9 @@ class myReporter implements Reporter {
 		};
 
 		const dataToString = JSON.stringify(data, null, 2);
-        console.log(dataToString);
+		console.log(dataToString);
 
-        fs.writeFileSync("text-results.json", dataToString);
+		fs.writeFileSync("text-results.json", dataToString);
 	}
 }
 
