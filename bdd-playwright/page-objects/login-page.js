@@ -1,3 +1,5 @@
+const { expect } = require("@playwright/test");
+
 class LoginPage {
 	async navigateToLoginScreen() {
 		await page.goto("https://forbes.cz/authentication/");
@@ -14,7 +16,7 @@ class LoginPage {
 	}
 
 	async assertUserIsLoggedIn() {
-		await page.waitForSelector(".home-breaking-news__background");
+		await expect(page).toHaveURL("https://forbes.cz/my-account/");
 	}
 }
 
