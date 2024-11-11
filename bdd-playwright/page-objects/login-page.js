@@ -18,6 +18,25 @@ class LoginPage {
 	async assertUserIsLoggedIn() {
 		await expect(page).toHaveURL("https://forbes.cz/my-account/");
 	}
+
+	async pause() {
+		await page.waitForTimeout(3000);
+	}
+
+	async clickOnButton(button) {
+		await page.click(`//button[text()='${button}']`);
+	}
+
+	async enterEmail(email) {
+		await page.click(
+			"#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection",
+		);
+		await page.fill(`input[type="email"]`, email);
+	}
+
+	async enterPassword(password) {
+		await page.fill(`input[type="password"]`, password);
+	}
 }
 
 module.exports = { LoginPage };

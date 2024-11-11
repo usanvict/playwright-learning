@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 177775800
+              "duration": 173393100
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3181866700
+              "duration": 3247045100
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1247816300
+              "duration": 1242154800
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 6,
             "name": "I am logged in",
             "match": {
-              "location": "bdd-playwright\\step-definitions\\login-step.js:15"
+              "location": "bdd-playwright\\step-definitions\\login-step.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 2068202199
+              "duration": 2375865900
             }
           },
           {
@@ -61,7 +61,284 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 80001299
+              "duration": 62995799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-action;trying-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Trying to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 184977000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on a login page",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3182248800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I fill the login form with email \"test@test.com\"",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 342551499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on \"Pokračovat\"",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182964200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I fill the login form with password \"test\"",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 608312500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I wait for 3 seconds",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3007119500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 116410100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-action;trying-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Trying to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 169875500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on a login page",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3185052200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I fill the login form with email \"victoria.usan@gmail.com\"",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 359230300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on \"Pokračovat\"",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191034299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I fill the login form with password \"test\"",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 619175800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I wait for 3 seconds",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3008376100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119668899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-action;trying-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Trying to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 168617099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on a login page",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5010340100,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\victo\\Desktop\\playwright-learning\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I fill the login form with email \"victoria.usan@gmail.com\"",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on \"Pokračovat\"",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I fill the login form with password \"%nEzHozNM4fbBTEH\"",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I wait for 3 seconds",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50320400
             }
           }
         ],
