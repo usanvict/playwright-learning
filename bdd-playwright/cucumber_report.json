@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 297482900
+              "duration": 189962199
             }
           },
           {
@@ -23,11 +23,24 @@
             "line": 4,
             "name": "I am on a login page",
             "match": {
-              "location": "bdd-playwright\\step-definitions\\login-step.js:4"
+              "location": "bdd-playwright\\step-definitions\\login-step.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 4923285599
+              "duration": 3707831400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I fill the login form with valid credentials",
+            "match": {
+              "location": "bdd-playwright\\step-definitions\\login-step.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1358241900
             }
           },
           {
@@ -35,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 186073400
+              "duration": 80908400
             }
           }
         ],
